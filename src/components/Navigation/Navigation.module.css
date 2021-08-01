@@ -1,0 +1,347 @@
+.navDiv{
+    height: 65px;
+    border-bottom: 1px solid #ccc;
+}
+.navDiv>div{
+    height: 100%;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.logo{
+    width: max-content;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+.inputIcon{
+    user-select: none;
+    cursor: pointer;
+}
+.logo>img{
+    height: 100%;
+    cursor: pointer;
+}
+.inputDiv{
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    height: max-content;
+    background-color: #ccc;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+.inputDiv:hover{
+    border: 1px solid #868686;
+}
+.inputDiv>form>input{
+    border: none;
+    background-color: #ccc;
+    transition: 0.3s;
+}
+.inputDiv:focus{
+    background-color: white;
+}
+.inputDiv>form>input:focus{
+    border: none;
+    outline: none;
+    box-shadow: none!important;
+}
+.buttonDiv{
+    display: flex;
+    align-items: center;
+}
+.myBtn{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.pinDiv{
+    position: absolute;
+    top: -8px;
+    right: 16px;
+    width: 15px;
+    height: 15px;
+    transform: rotateZ(45deg);
+    background-color: rgb(43, 43, 43);
+}
+.menuBarDiv, .menuProDiv{
+    position: absolute;
+    display: none;
+    right: 5px;
+    top: 75px;
+    padding: 10px;
+    user-select: none;
+    box-shadow: -4px 7px 22px -9px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 5px;
+    z-index: 200;
+}
+.menuBarDiv>div:nth-child(1){
+    display: flex;
+}
+.menuBarDiv>div:nth-child(2)>button{
+    border: 1px dashed #ccc;
+    padding-left: 14px;
+    padding-right: 13px;
+}
+.myBtn:focus{
+    border: 1px solid #ccc;
+}
+.userImage{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.uploadDiv{
+    position: relative;
+    outline: 2px dashed #ccc;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: rgb(236, 236, 236);
+}
+.uploadDiv>div:nth-child(1){
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ioMdImage{
+    font-size: 120px;
+}
+.bsFillPlusImage{
+    font-size: 30px;
+    color: #007bff;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+.uploadDiv>div:nth-child(2){
+    position: absolute;
+    bottom: 0%;
+    margin: 0px 4px 10px 0px;
+    text-align: center;
+}
+.uploadDiv>div:nth-child(2)>div{
+    font-size: 14px;
+    padding: 0;
+}
+.uploadDiv>input{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    outline: 0;
+    opacity: 0;
+}
+.uploadModalDialog{
+    position: absolute;
+    min-width: 90%;
+    min-height: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)!important;
+    margin: auto;
+}
+.uploadModalContent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+}
+@media only screen and (max-width:800px){
+    .loginBtn, .joinBtn, .uploadBtn{
+        display: none;
+    }
+    .uploadModalDialog{
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+@media only screen and (min-width:801px){
+    .faBars{
+        display: none;
+    }
+    .menuProDiv{
+        display: none;
+    }
+    .userUploadBtn{
+        display: none;
+    }
+    .inputDiv{
+        margin-right: 35px;
+    }
+}
+.logoModal{
+    height: 100px;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.logoModal>img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.loginInputModal{
+    border-color: #ccc;
+}
+.loginInputModal:focus{
+    border-color: rgb(80, 80, 80);
+    box-shadow: none;
+}
+.progressMainDiv{
+    display: none;
+}
+.progressMainDiv>div{
+    height: 3px;
+    border-radius: 0;
+}
+.previewDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.previewDiv>img{
+    max-width: 100%;
+    max-height: 70%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+}
+.previewDiv>div{
+    margin-top: 4%!important;
+    justify-content: center;
+}
+.previewDiv>div>textarea, .previewDiv>div>input{
+    border: 1px solid #ccc;
+}
+.previewDiv>div>textarea:hover, .previewDiv>div>input:hover{
+    border: 1px solid #818181;
+}
+.previewDiv>div>textarea:focus, .previewDiv>div>input:focus{
+    box-shadow: none;
+    border: 1px solid #818181;
+}
+.successUpdate{
+    display: none;
+}
+.successUpdate>div:nth-child(1){
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    opacity: 0.1;
+    z-index: 2000;
+}
+.successUpdate>div:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: max-content;
+    z-index: 2001;
+}
+
+@media only screen and (max-width:800px){
+    .logoModal{
+        height: 70px;
+    }
+}
+
+.loaderMainDiv{
+    position: fixed;
+    display: none;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 2100;
+}
+.loader {
+    color: #818181;
+    font-size: 20px;
+    margin: 100px auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  @-webkit-keyframes load4 {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+  @keyframes load4 {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+  

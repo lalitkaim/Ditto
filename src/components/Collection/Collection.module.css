@@ -1,0 +1,206 @@
+.imageOuterDiv{
+    width: 100%;
+    height: 100%;
+    /* border: 4px solid salmon; */
+    position: relative;
+}
+.imageDiv{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.imageDiv>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.heartBook{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.profileDiv{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.profileDiv>div{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.profileDiv>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hoverDownload{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.upperMobDiv{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.upperMobDiv>div{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.upperMobDiv>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lowerMobDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 2px 5px 2px;
+    border: 1px solid #ccc;
+}
+.beforeheart{
+    color: #212529;
+    cursor: pointer;
+}
+.beforeheart:active{
+    color: red;
+    cursor: pointer;
+}
+.afterheart{
+    color: red;
+    cursor: pointer;
+}
+.afterheart:active{
+    color: #212529;
+    cursor: pointer;
+}
+.beforebookmark{
+    color: #212529;
+    cursor: pointer;
+}
+.beforebookmark:active{
+    color: green;
+    cursor: pointer;
+}
+.afterbookmark{
+    color: green;
+    cursor: pointer;
+}
+.afterbookmark:active{
+    color: #212529;
+    cursor: pointer;
+}
+.download:hover, .hoverDownload:hover{
+    color:#007fbb;
+    cursor: pointer;
+}
+.username:hover{
+    color:#ccc;
+    cursor: pointer;
+}
+.uploadModalDialog{
+    position: absolute;
+    min-width: 90%;
+    min-height: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)!important;
+    margin: auto;
+}
+.uploadModalContent{
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    min-height: 100%;
+    border-radius: 0;
+    border: 0;
+}
+.showImageProfile{
+    display: flex;
+    flex-wrap: wrap;
+}
+.showImageProfile>div{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.showImageProfile>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.popImageHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.popImageHeader>div:nth-child(2){
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.popImageDiv{
+    width: 100%;
+    height: 100%;
+}
+.popImageDiv>img{
+    width: 100%;
+    object-fit: cover;
+}
+.logoModal{
+    height: 100px;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.logoModal>img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.loginInputModal{
+    border-color: #ccc;
+}
+.loginInputModal:focus{
+    border-color: rgb(80, 80, 80);
+    box-shadow: none;
+}
+@media only screen and (max-width:800px){
+    .uploadModalDialog{
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .showImageProfile>div{
+        width: 30px;
+        height: 30px;
+    }
+    .popImageDiv{
+        width: 100%;
+        height: max-content;
+    }
+}
+@media only screen and (min-width:768px){
+    .upperMobDiv,.lowerMobDiv{
+        display: none;
+    }
+}
+@media only screen and (max-width:767px){
+    .hoverDiv{
+        display: none;
+    }
+    .imageOuterDiv{
+        height: auto;
+    }
+}
+

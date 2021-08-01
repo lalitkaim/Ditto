@@ -1,0 +1,18 @@
+.listDiv{
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    overflow: auto;
+}
+.listDiv>div{
+    min-height: 100%;
+    display: inline-flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.listDiv>div:hover{
+    border-top:4px solid white;
+    border-bottom: 4px solid #535353;
+}

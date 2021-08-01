@@ -1,0 +1,78 @@
+.landingDiv{
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+.hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.3;
+}
+.textDiv{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+}
+.textDiv>h1{
+    font-size: 80px;
+    margin-bottom: 2%;
+    transition: 0.3s    ;
+}
+.textDiv>div>p{
+    font-size: 25px;
+    display: inline;
+}
+.landingImg{
+    width: 100%;
+    object-fit: cover;
+}
+.cursor{
+    display: inline;
+    position: absolute;
+    min-height: 22%;
+    background-color: white;
+    z-index: 1;
+    animation: flash 0.5s none infinite alternate;
+  }
+  @keyframes flash{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+@media only screen and (max-width:700px){
+    .textDiv>h1{
+        font-size: 60px;
+    }
+    .textDiv>div>p{
+        font-size: 22px;
+    }
+    .landingDiv{
+        max-height: 350px;
+    }
+}
+@media only screen and (max-width:450px){
+    .textDiv>h1{
+        font-size: 40px;
+    }
+    .textDiv>div>p{
+        font-size: 18px;
+    }
+    .textDiv{
+        width: 90%;
+    }
+    .landingDiv{
+        max-height: 200px;
+    }
+}

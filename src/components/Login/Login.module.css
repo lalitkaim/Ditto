@@ -1,0 +1,24 @@
+.logo{
+    height: 100px;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.logo>img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.loginInput{
+    border-color: #ccc;
+}
+.loginInput:focus{
+    border-color: rgb(80, 80, 80);
+    box-shadow: none;
+}
+@media only screen and (max-width:800px){
+    .logo{
+        height: 70px;
+    }
+}

@@ -1,0 +1,33 @@
+.navList{
+    width: 100%;
+    overflow: auto;
+    user-select: none;
+    background: #fff; 
+    background: -webkit-linear-gradient(to right, #fff, #b6b6b6); 
+    background: linear-gradient(to right, #fff, #b6b6b6);
+}
+.navList::-webkit-scrollbar{
+    height: 3px;
+}
+.navList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.navList::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+.navList::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.navList>div{
+    display: inline-flex;
+}
+.navList>div>a{
+    margin:0 10px 0;
+    color: #6e6e6e;
+    text-decoration: none;
+    width: max-content;
+}
+.navList>div>a:hover{
+    color: #202020;
+}
