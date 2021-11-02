@@ -1,3 +1,10 @@
+# Ditto
+A web based application where you can share your stock photography. Feel free to use the services @ https://the-quiddle.web.app
+
+# Technology Used
+ReactJs for Front-end, Firebase for Back-end, Javascript, HTML, CSS, BootStrap, UiKit etc. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
